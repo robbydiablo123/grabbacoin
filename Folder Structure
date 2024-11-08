@@ -1,0 +1,81 @@
+/grabbacoin-website
+    /images
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Image with Hat Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #f1a732;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .hat {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      width: 80px;
+      transform: translateX(-50%);
+    }
+
+    .smoke {
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      width: 50px;
+      opacity: 0.7;
+      animation: smoke 3s infinite;
+    }
+
+    .sparkles {
+      position: absolute;
+      right: 20%;
+      top: 30%;
+      font-size: 24px;
+      color: white;
+    }
+
+    @keyframes smoke {
+      0% { opacity: 0.7; transform: translateY(0) scale(1); }
+      50% { opacity: 0.5; transform: translateY(-10px) scale(1.1); }
+      100% { opacity: 0; transform: translateY(-20px) scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <!-- Replace the src with the path to your uploaded image -->
+    <img src="path/to/your-dog-image.jpg" alt="Dog with Hat">
+    <img src="path/to/hat-image.png" class="hat" alt="Hat">
+    <img src="path/to/smoke-image.png" class="smoke" alt="Smoke">
+    <div class="sparkles">✨</div>
+  </div>
+</body>
+    index.html
+    style.css
+    script.js
