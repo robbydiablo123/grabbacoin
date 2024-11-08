@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // "Buy Grabbacoin" Button functionality
+    const buyButton = document.getElementById('buy-button');
+    buyButton.addEventListener('click', function() {
+        alert('Congratulations! You just bought Grabbacoin!');
+    });
+
+    // "Show Fun Fact" Button functionality
+    const showFunFactButton = document.getElementById('show-fun-fact');
+    const funFactText = document.getElementById('fun-fact-text');
+    showFunFactButton.addEventListener('click', function() {
+        funFactText.textContent = "Grabbacoin started as a meme on the internet, and now it's the most fun cryptocurrency around!";
+    });
+});
